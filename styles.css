@@ -1,0 +1,175 @@
+body {
+  background: #008080;
+}
+p {
+  padding-bottom: 12px;
+}
+.window { 
+  width: 100%;
+  font-family: 'Arial',sans-serif;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+/*   position: absolute; */
+}
+
+.window_inner {
+  border: 1px solid;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  padding-bottom: 16px;
+}
+
+.window_heading {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.window_heading_icon {
+  background: url('icons/notepad-0.png');
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+  .window_heading_icon {
+    background-image: url('https://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_notepad_icon@2x.png');
+    background-size: 16px 16px;
+  }
+} */
+
+.window_heading_buttons {
+  margin: 1px 0;
+  background: url('https://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_window_controls.png') no-repeat;
+  width: 50px;
+  height: 14px;
+  float: right;
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+  .window_heading_buttons {
+    background-image:   url('https://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_window_controls@2x.png');
+    background-size: 50px 14px;
+  }
+} */
+
+.window_actions {
+  margin: 5px 9px;
+  line-height: 1;
+  color: #000;
+  font-size: 11px;
+}
+
+.window_content {
+  margin: 0 2px 2px 2px;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 12px;
+}
+
+.window_content_inner {
+  background: #fff;
+  border: 1px solid;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-bottom-color: #dfdfdf;
+  border-right-color: #dfdfdf;
+  padding: 10px;
+  height: 50vh;
+  overflow:auto;
+/*   overflow-y:hidden; */
+}
+
+p {
+  margin: 0;
+}
+
+
+/* VERTICAL SCROLL BAR */
+.window_content_inner::-webkit-scrollbar {
+    width: 18px;
+}
+.window_content_inner::-webkit-scrollbar-track {
+   background-image: linear-gradient(45deg, #C0C0C0 25%, transparent 25%), linear-gradient(-45deg, #C0C0C0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #C0C0C0 75%), linear-gradient(-45deg, transparent 75%, #C0C0C0 75%);
+  background-size: 2px 2px;
+  background-position: 0 0, 0 1px, 1px -1px, -1px 0px;
+}
+ 
+.window_content_inner::-webkit-scrollbar-thumb {
+  background: #C0C0C0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+.window_content_inner::-webkit-scrollbar-button:start:decrement{
+  display: block;
+/*   background-color: #C0C0C0; */
+  background-image: url("https://drive.google.com/uc?id=13xmmayvnxY_VO7x3ri4YlIlF2nBvQ8wB&export=download");
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+.window_content_inner::-webkit-scrollbar-button:end:increment {
+  display: block;
+  background-color: #C0C0C0;
+  background-image: url("https://drive.google.com/uc?id=1dNE7gWTDQemAU8SqTmzrlq37z0768Js4&authuser=1&export=download");
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+
+::-webkit-scrollbar-corner{
+  display: block;
+  background: #C0C0C0;
+}
+
+
+/* HORIZONTAL SCROLL BAR */
+.window_content_inner::-webkit-scrollbar:horizontal {
+    width: 18px;
+}
+.window_content_inner::-webkit-scrollbar-track:horizontal {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+.window_content_inner::-webkit-scrollbar-thumb:horizontal {
+  background: #C0C0C0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+/* Section Header */
+.section-header {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+.section-header h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
